@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha Alternativo</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    
+    
+
+    <h1>Jogo da Velha</h1>
+    <div class="game-board">
+        <table>
+            
+            <tr>
+                <td onclick="makeMove(this, 0)"></td>
+                <td onclick="makeMove(this, 1)"></td>
+                <td onclick="makeMove(this, 2)"></td>
+            </tr>
+            <tr>
+                <td onclick="makeMove(this, 3)"></td>
+                <td onclick="makeMove(this, 4)"></td>
+                <td onclick="makeMove(this, 5)"></td>
+            </tr>
+            <tr>
+                <td onclick="makeMove(this, 6)"></td>
+                <td onclick="makeMove(this, 7)"></td>
+                <td onclick="makeMove(this, 8)"></td>
+            </tr>
+        </table>
+    </div>
+     
+    <form id="player-form">
+        <label for="play-against-computer">Jogar contra a máquina?</label>
+        <select id="play-against-computer">
+            <option value="no">Não</option>
+            <option value="yes">Sim</option>
+        </select>
+        <button type="button" onclick="startGame()">Iniciar Jogo</button>
+    </form>
+     
+    <script src="script.js"></script> 
+</body>
+</html>
